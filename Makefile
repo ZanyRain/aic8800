@@ -36,7 +36,7 @@ BIN-AICRF-TEST	:=	bt_test wifi_test
 BINS-AICRF-TEST	:=	$(addprefix $(SRC-AICRF-TEST),$(BIN-AICRF-TEST))
 .PHONY: build-aicrf-test
 build-aicrf-test: $(BINS-AICRF-TEST)
-	make CROSS_COMPILE=aarch64-linux-gnu- -C $(SRC-AICRF-TEST)
+	make -C $(SRC-AICRF-TEST)
 
 #
 # Clean
