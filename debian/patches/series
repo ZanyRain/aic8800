@@ -15,4 +15,3 @@ fix-linux-6.12-build.patch
 fix-linux-6.13-build.patch
 fix-linux-6.15-build.patch
 fix-aic_btusb-implicit-declare-compat_ptr.patch
-add-more-usb-vid-pid.patch
