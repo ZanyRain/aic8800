@@ -2115,8 +2115,10 @@ static int aicwf_parse_usb(struct aic_usb_dev *usb_dev, struct usb_interface *in
 
     /* Check interface number */
 #ifdef CONFIG_USB_BT
+AICWFDBG(LOGERROR,"ret -> CONFIG_USB_BT %d",1);
     if (usb->actconfig->desc.bNumInterfaces != 3) {
 #else
+AICWFDBG(LOGERROR,"ret -> CONFIG_USB_BT %d",0);
     if (usb->actconfig->desc.bNumInterfaces != 1) {
 #endif
 	   AICWFDBG(LOGERROR, "Number of interfaces: %d not supported\n",
